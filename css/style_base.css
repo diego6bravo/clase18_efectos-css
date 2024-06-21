@@ -52,11 +52,19 @@ nav ul li a:before{
     background: var(--decoration-color);
     position:absolute;
     bottom:-10px; 
+    left: 0%;
+    transform: translateX(-50%) scaleX(0);
+		transform-origin: 50% 50%;
+		width: 100%;
+		height: 4px;
+		background-color: var(--decoration-color);
+		transition: transform 250ms;
     /* alto y ancho=0 */
     /* transition: ; */
 }
 nav ul li a:hover::before{
     /* ancho final */
+    transform: translateX(-0%) scaleX(1);
 }
 
 /* Barra redes */
@@ -135,12 +143,12 @@ nav ul li a:hover::before{
     animation: rotation .6s linear infinite;
  }
 
- a:hover {
+ /* a:hover {
     cursor:hand;
     text-decoration:underline;
     color:#c79800;
                       
-}
+} */
 
  @keyframes rotation {
     0% {
