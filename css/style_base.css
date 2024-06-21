@@ -88,6 +88,9 @@ nav ul li a:hover::before{
 .social ul li a:hover{
     /* transform: ; */
     /* padding: ; */
+    background-color: #000;
+    transform: scaleX(1.4);
+    transform-origin: left center;
 }
 
 
