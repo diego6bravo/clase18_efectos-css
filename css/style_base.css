@@ -132,6 +132,13 @@ nav ul li a:hover::before{
     animation: rotation .6s linear infinite;
  }
 
+ a:hover {
+    cursor:hand;
+    text-decoration:underline;
+    color:#c79800;
+                      
+}
+
  @keyframes rotation {
     0% {
         transform: rotate(0deg);
